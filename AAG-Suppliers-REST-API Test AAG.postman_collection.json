@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "2d950d4a-dc89-45f5-9de7-8559a3e18b6f",
+		"name": "AAG-Suppliers-REST-API Test AAG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "supplier/fields",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/fields",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier/allenrolleds",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/Allenrolleds",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"Allenrolleds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier/tournament",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/tournament?id=6403",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"tournament"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6403"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier/enrolleds",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t\"1010\",\n\t\"1011\",\n\t\"81000\"\n]"
+				},
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/enrolleds",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"enrolleds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier/tournament",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\": 0,\r\n  \"Guid\": \"string\",\r\n  \"Title\": \"Ejemplo primero\",\r\n  \"SubTitle\": \"Primero\",\r\n  \"GameMode\": 1,\r\n  \"BatchesCount\": 1,\r\n  \"BatchesHoles\": 18,\r\n  \"Category\": 0,\r\n  \"EndHandicap\": 0,\r\n  \"StartDate\": \"2019-11-27\",\r\n  \"Field\": 1428,\r\n  \"TeeOut\": 2306,\r\n  \"Active\": true,\r\n  \"ScoreCards\": [\r\n    {\r\n      \"Id\": 0,\r\n      \"EnrollmentNumber\": \"13260\",\r\n      \"BatchNumber\": 1,\r\n      \"IniHole\": 1,\r\n      \"State\": true,\r\n      \"ScoreGrossHole01\": 3,\r\n      \"ScoreGrossHole02\": 3,\r\n      \"ScoreGrossHole03\": 4,\r\n      \"ScoreGrossHole04\": 5,\r\n      \"ScoreGrossHole05\": 6,\r\n      \"ScoreGrossHole06\": 7,\r\n      \"ScoreGrossHole07\": 0,\r\n      \"ScoreGrossHole08\": null,\r\n      \"ScoreGrossHole09\": 3,\r\n      \"ScoreGrossHole10\": 3,\r\n      \"ScoreGrossHole11\": 4,\r\n      \"ScoreGrossHole12\": 5,\r\n      \"ScoreGrossHole13\": 6,\r\n      \"ScoreGrossHole14\": null,\r\n      \"ScoreGrossHole15\": 4,\r\n      \"ScoreGrossHole16\": 6,\r\n      \"ScoreGrossHole17\": 3,\r\n      \"ScoreGrossHole18\": 4,\r\n      \"ScoreGrossTotal\": 0,\r\n      \"ScoreGrossIda\": 0,\r\n      \"ScoreGrossVta\": 0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n      \"EnrollmentNumber\": \"81000\",\r\n      \"BatchNumber\": 1,\r\n      \"IniHole\": 1,\r\n      \"State\": true,\r\n      \"ScoreGrossHole01\": 3,\r\n      \"ScoreGrossHole02\": 3,\r\n      \"ScoreGrossHole03\": 4,\r\n      \"ScoreGrossHole04\": 5,\r\n      \"ScoreGrossHole05\": 6,\r\n      \"ScoreGrossHole06\": 7,\r\n      \"ScoreGrossHole07\": 0,\r\n      \"ScoreGrossHole08\": null,\r\n      \"ScoreGrossHole09\": 3,\r\n      \"ScoreGrossHole10\": 3,\r\n      \"ScoreGrossHole11\": 4,\r\n      \"ScoreGrossHole12\": 5,\r\n      \"ScoreGrossHole13\": 6,\r\n      \"ScoreGrossHole14\": null,\r\n      \"ScoreGrossHole15\": 4,\r\n      \"ScoreGrossHole16\": 6,\r\n      \"ScoreGrossHole17\": 3,\r\n      \"ScoreGrossHole18\": 4,\r\n      \"ScoreGrossTotal\": 0,\r\n      \"ScoreGrossIda\": 0,\r\n      \"ScoreGrossVta\": 0\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/tournament",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"tournament"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier/tournament",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "328bc860-e7f5-40ca-9981-acb3d70d4d7a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Christian",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://aag-api-test.tecnocode.net/api/supplier/tournament?id=6403",
+					"protocol": "http",
+					"host": [
+						"aag-api-test",
+						"tecnocode",
+						"net"
+					],
+					"path": [
+						"api",
+						"supplier",
+						"tournament"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6403"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
